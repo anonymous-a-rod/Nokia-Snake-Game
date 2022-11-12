@@ -1,0 +1,159 @@
+*, *::before, *::before {
+    overflow: hidden;
+    
+}
+
+h1 {
+    position: absolute;
+    top: 10px;
+    font-size: 4em;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Harmattan', sans-serif;
+    background-image: url("simple-backgrounds.jpg");
+
+}
+
+.container {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 710px;
+    position: absolute;
+}
+
+.nokia {
+    width: 400px;
+    z-index: 0;
+}
+
+.score {
+    position: absolute;
+    z-index: 20;
+    top: 50px;
+}
+
+.grid {
+    width: 324px;
+    height: 324px;
+    display: flex;
+    flex-wrap: wrap;
+    border-style: solid;
+    position: absolute;
+    background-color: white;
+    z-index: 10;
+    margin-top: 43px;
+    border: 3px solid black;
+}
+
+.grid div {
+    height: 27px;
+    width: 27px;
+}
+
+.controls {
+    position: absolute;
+    top: 400px;
+    width: 104px;
+    height: 78px;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.start {
+    position: relative;
+    color: white;
+}
+
+button {
+    color: white;
+    background-color: #0e1510;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+.button-hor {
+    display: relative;
+    height: 24px;
+    width: 60px;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.up {
+    transform: rotate(-90deg);
+}
+
+.down {
+    transform: rotate(90deg);
+}
+
+.left-btn, .right-btn {
+    position: absolute;
+    height: 60px;
+    width: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-btn {
+    left: 0px;
+}
+
+.right-btn {
+    right: 0px;
+}
+
+.snake {
+    background-color: blue;
+}
+
+.apple {
+    background-color: red;
+}
+
+.instructions {
+    position: fixed;
+    z-index: 40;
+    bottom: 00px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.arrows {
+    height: 100px;
+}
+
+p {
+    line-height: 1;
+}
+
+@media screen and (max-height: 1060px){
+    .instructions{
+        display: none;
+    }
+    h1 {
+        display: none;
+    }
+
+}
